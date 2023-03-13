@@ -36,7 +36,7 @@
     "@types/mdast": "^3.0.10",
     "fp-ts": "^2.13.1",
     "front-matter": "^4.0.2",
-    "glob": "^8.1.0",
+    "glob": "^9.2.1",
     "mdast-util-wiki-link": "^0.0.2",
     "micromark-extension-wiki-link": "^0.0.4",
     "remark-frontmatter": "^4.0.1",
