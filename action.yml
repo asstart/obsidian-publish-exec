@@ -1,0 +1,47 @@
+name: "Obsidian Publish Action"
+description: "Publish selected note from your obsidian"
+auther: "Artem Astashov"
+inputs:
+  # See /actions/compose/action.yml
+  targetRepo:
+    description: "Repository where to publish"
+    required: true
+  # See /actions/compose/action.yml
+  targetBranch:
+    description: "Branch to publish"
+    required: true
+  # See /actions/compose/action.yml
+  sourceFolder:
+    description: "Directory to search files in the source repository"
+    required: true
+  # See /actions/compose/action.yml
+  targetFolder:
+    description: "Directory to copy files in the target repository"
+    required: true
+  # See /actions/compose/action.yml
+  tags:
+    description: "Tags to filter content"
+    required: true
+  # See /actions/compose/action.yml
+  publishAll:
+    description: "Publish all files in inputs.sourceFolder"
+    required: true
+  # See /actions/compose/action.yml
+  token:
+    description: "Access token to push to target repo"
+    required: false
+  jekyllTheme:
+    required: false
+  jekyllTitle:
+    required: false
+  jekyllDescription:
+    required: false
+  colorSchema:
+    required: false
+  domain:
+    required: false
+  targetDefaultBranch:
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
